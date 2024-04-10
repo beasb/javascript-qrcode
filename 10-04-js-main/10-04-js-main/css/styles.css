@@ -10,13 +10,13 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #34db7a;
+    background-color: #270404;
 }
 
 .container {
-    background-color: #fff;
-    height: 260px;
-    width: 400px;
+    background-color: #dfded6;
+    height: 460px;
+    width: 500px;
     border-radius: 10px;
     padding: 20px;
     transition: 0.2s;
@@ -37,18 +37,19 @@ body {
 }
 
 #qr-header p {
-    color: #444;
+    color: #380202;
     font-size: 0.9rem;
 }
 
 .container #qr-form {
-    margin: 20px 15px;
+    margin: 15px 16px;
 }
 
 #qr-form input,
-#qr-form button {
+#qr-form button,
+#download-btn {
     width: 100%;
-    height: 55px;
+    height: 40px;
     border: none;
     border-radius: 5px;
     outline: none;
@@ -56,12 +57,12 @@ body {
 }
 
 #qr-form input {
-border: 1px solid #777;
+border: 1px solid #1f1d1d23;
 padding: 10px 15px;
 }
 
 #qr-form button {
-    background-color: #086824;
+    background-color: #7a0515;
     margin-top: 20px;
     color: #fff;
     font-size: 1.2rem;
@@ -89,4 +90,23 @@ padding: 10px 15px;
     opacity: 1;
     pointer-events: auto;
     transition: 0.5s;
+}
+
+#qr-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#download-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#download-btn:hover {
+    opacity: 0.8;
 }
